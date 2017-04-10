@@ -5,7 +5,6 @@
 	<title>Weather Demo</title>
 
 
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	
@@ -36,16 +35,14 @@
 	  </div>
 	  <h2>Benutzerdaten</h2>
 	  <div class="panel panel-default">
-	  	<p id="userName"></p>
-	  	<div id="UserResult">
-	  	</div>
+	  	<div id="userName"></div>
 	  </div>
 	</div>
 </div>
 <script> 
 	var myUserId = document.getElementById("userID");
 	var myButton = document.getElementById("getUserDataButton");
-	var myResult = document.getElementById("UserResult");
+	// var myResult = document.getElementById("UserResult");
 
 	myButton.addEventListener('click', receiveUserData, false);
 
@@ -57,7 +54,8 @@
 		$.ajax({
 		  url: root + '/users/' + myUserId.value,
 		  method: 'GET'
-		}).then(function(data) {
+		})
+		.then(function(data) {
 			// myResult.innerHTML = '<p>' + JSON.stringify(data) + '</p>';
 			document.getElementById("userName").innerHTML = "Name:" + data.name;
 		});

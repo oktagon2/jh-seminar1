@@ -1,27 +1,30 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Seminar 1
 
+Verwende dieses Template als Ausgangsbasis für unser Code Camp in Cloud9
 
-Hi there! Welcome to Cloud9 IDE!
+1) Öffne index.html file
 
-To get you started, we included a small hello world application.
+2) Klicke auf "Preview"
 
-1) Open the hello-world.html file
+3) Gebe eine Zahl ein zwischen 1-10 und betätige den Knopf
 
-2) Click on the Preview button to open a live preview pane
+Weitere Aufgaben:
 
-3) Make some changes to the file, save, watch the preview, and have fun!
+4) Schaue auf https://jsonplaceholder.typicode.com/users nach welche weiteren 
+Attributte vorhanden sind.
 
-Happy coding!
-The Cloud9 IDE team
+5) Zeige neben dem Namen auch die Username und E-Mail und den Firmenname an.
 
+## Hinweise
 
-## Support & Documentation
+Mit der Punktnotation kann man an Element in einem Javascript Objekt navigieren.
 
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-# seminar1
+Mit der Backtick Notation geht es einfacher, die aber erst seit ES6 vorhanden 
+ist. Beispiel: 
+
+			document.getElementById("userName").innerHTML = `
+				<p>Name: ${data.name}</p>
+				<p>Email: ${data.email}</p>
+				<p>Firma: ${data.company.name}</p>
+				`;
+
