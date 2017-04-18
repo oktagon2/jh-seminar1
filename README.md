@@ -17,7 +17,7 @@ Attributte vorhanden sind.
 
 ## Hinweise
 
-Mit der Punktnotation kann man an Element in einem Javascript Objekt navigieren.
+Mit der Punktnotation kann man in einem Javascript Objekt navigieren.
 
 Mit der Backtick Notation geht es einfacher, die aber erst seit ES6 vorhanden 
 ist. Beispiel: 
