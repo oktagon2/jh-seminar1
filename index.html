@@ -57,7 +57,8 @@
 		})
 		.then(function(data) {
 			// myResult.innerHTML = '<p>' + JSON.stringify(data) + '</p>';
-			document.getElementById("userName").innerHTML = "Name:" + data.name;
+			document.getElementById("userName").innerHTML = "Name: " + data.name 
+				+ ", E-Mail: " + data.email;
 		});
 		
 	}
